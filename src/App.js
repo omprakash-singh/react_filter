@@ -11,7 +11,15 @@ function App() {
 
     setShowData(
       data.filter((item) =>
-        (item.first_name + item.last_name + item.email + item.ip_address)
+        (
+          item.first_name +
+          " " +
+          item.last_name +
+          " " +
+          item.email +
+          " " +
+          item.ip_address
+        )
           .toLowerCase()
           .includes(value.toLowerCase())
       )
